@@ -1,0 +1,36 @@
+{
+    "data": [{
+        "repositoryId": 1,
+        "project_name": "armv7",
+        "project_id": null,
+        "use_size": null,
+        "use_rate": null,
+        "quota_size": null,
+        "harborSecurityClairStatistcs": null,
+        "harborRepositoryMessagesList": [{
+            "repositoryId": null,
+            "fullNameRepo": "10.1.11.196/armv7/armhf-ubuntu",
+            "repositoryDetial": [{
+                "createTime": "2016-10-30 05:23:52",
+                "tag": "1.0",
+                "vulnerabilityNum": -1,
+                "abnormal": false,
+                "notSupported": false,
+                "notScanned": true,
+                "digest": "sha256:4d7ccbc584c83981b83309e655dfa6fa81fca4dc6eae1dc28519d6aa7afc6bee"
+            }],
+            "tags": ["1.0"],
+            "lastUpdateDate": "2016-10-30 13:23:52",
+            "repoCreateDate": null,
+            "harborProjectName": null,
+            "repository": "armv7/armhf-ubuntu"
+        }],
+        "harborHost": "10.1.11.196",
+        "referredClusterNames": null,
+        "referredClusterAliasNames": null,
+        "dataCenterName": null,
+        "isPublic": true
+    }],
+    "success": true
+}
+
