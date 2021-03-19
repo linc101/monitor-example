@@ -1,0 +1,193 @@
+{
+    "data": [
+        {
+            "serviceType": "Deployment",
+            "isPV": false,
+            "img": [
+                "10.1.11.196/edge-arm64/fluent-bit:v1.5-arm64-centos"
+            ],
+            "memory": [
+                "128Mi"
+            ],
+            "instance": 1,
+            "network-policy-onoff": false,
+            "dataPrivilege": "rw",
+            "cpu": [
+                "100m"
+            ],
+            "isMsf": false,
+            "clusterId": "edge-system--edge-cluster",
+            "ports": [
+                {
+                    "name": "tcp-80",
+                    "containerPort": 80,
+                    "protocol": "TCP"
+                }
+            ],
+            "aliasNamespace": "testns",
+            "version": "v1",
+            "systemLabel": "app=name",
+            "createTime": "2021-03-19T03:25:20Z",
+            "name": "name",
+            "namespace": "tester-testns",
+            "selector": {
+                "matchLabels": {
+                    "app": "name"
+                }
+            },
+            "status": "starting"
+        },
+        {
+            "serviceType": "Deployment",
+            "isPV": false,
+            "img": [
+                "10.1.11.196/onlineshop/nginx:latest"
+            ],
+            "memory": [
+                "128Mi"
+            ],
+            "instance": 1,
+            "network-policy-onoff": false,
+            "dataPrivilege": "rw",
+            "cpu": [
+                "100m"
+            ],
+            "isMsf": false,
+            "clusterId": "edge-system--edge-cluster",
+            "ports": [
+                {
+                    "name": "tcp-80",
+                    "containerPort": 80,
+                    "protocol": "TCP"
+                }
+            ],
+            "aliasNamespace": "testns",
+            "version": "v2",
+            "systemLabel": "app=svc-nginx-amd64",
+            "createTime": "2021-03-05T09:46:52Z",
+            "name": "svc-nginx-amd64",
+            "namespace": "tester-testns",
+            "selector": {
+                "matchLabels": {
+                    "app": "svc-nginx-amd64"
+                }
+            },
+            "status": "started"
+        },
+        {
+            "serviceType": "Deployment",
+            "isPV": false,
+            "img": [
+                "10.1.11.196/onlineshop/nginx:latest"
+            ],
+            "memory": [
+                "128Mi"
+            ],
+            "instance": 1,
+            "network-policy-onoff": false,
+            "dataPrivilege": "rw",
+            "cpu": [
+                "100m"
+            ],
+            "isMsf": false,
+            "clusterId": "edge-system--edge-cluster",
+            "ports": [
+                {
+                    "name": "tcp-80",
+                    "containerPort": 80,
+                    "protocol": "TCP"
+                }
+            ],
+            "aliasNamespace": "testns",
+            "version": "v1",
+            "systemLabel": "app=svc-nginx-test",
+            "createTime": "2021-03-17T01:24:40Z",
+            "name": "svc-nginx-test",
+            "namespace": "tester-testns",
+            "selector": {
+                "matchLabels": {
+                    "app": "svc-nginx-test"
+                }
+            },
+            "status": "starting"
+        },
+        {
+            "serviceType": "Deployment",
+            "isPV": false,
+            "img": [
+                "10.1.11.196/ai-model/yolov3:v1.0"
+            ],
+            "memory": [
+                "1Gi"
+            ],
+            "instance": 1,
+            "network-policy-onoff": false,
+            "dataPrivilege": "rw",
+            "cpu": [
+                "500m"
+            ],
+            "isMsf": false,
+            "clusterId": "edge-system--edge-cluster",
+            "ports": [
+                {
+                    "containerPort": 80,
+                    "protocol": "TCP"
+                }
+            ],
+            "aliasNamespace": "testns",
+            "version": "v1",
+            "systemLabel": "app=testai",
+            "createTime": "2021-03-19T03:35:58Z",
+            "name": "test",
+            "namespace": "tester-testns",
+            "selector": {
+                "matchLabels": {
+                    "app": "testai"
+                }
+            },
+            "status": "stopped"
+        },
+        {
+            "serviceType": "Deployment",
+            "isPV": false,
+            "img": [
+                "10.1.11.196/armv7/armhf-ubuntu:1.0"
+            ],
+            "memory": [
+                "512Mi"
+            ],
+            "instance": 1,
+            "network-policy-onoff": false,
+            "dataPrivilege": "rw",
+            "cpu": [
+                "500m"
+            ],
+            "isMsf": false,
+            "clusterId": "edge-system--edge-cluster",
+            "ports": [
+                {
+                    "name": "tcp-80",
+                    "containerPort": 80,
+                    "protocol": "TCP"
+                }
+            ],
+            "aliasNamespace": "testns",
+            "version": "v1",
+            "systemLabel": "app=test12",
+            "labels": {
+                "type": "ai"
+            },
+            "createTime": "2021-03-16T05:56:20Z",
+            "name": "test12",
+            "namespace": "tester-testns",
+            "selector": {
+                "matchLabels": {
+                    "app": "test12"
+                }
+            },
+            "status": "starting"
+        }
+    ],
+    "success": true
+}
+
